@@ -47,9 +47,25 @@ Data preprocessing is performed in `data/dataprocess.py`:
 - Group by date
 - Aggregate features
 - Generate sequences for model input
-- Normalize input features
 
 You can run preprocessing via:
 
 ```bash
 python preprocess.py
+
+## 🧠 Models
+
+You can choose the model architecture via the `--model` argument when running the script:
+
+- `--model LSTM`: use LSTM-based sequential model
+- `--model Transformer`: use Transformer with attention mechanism
+- `--model Logical`: use logic-aware numerical embedding model (e.g., with box or sinusoidal encodings)
+
+Example:
+
+```bash
+python run2.py --model LSTM
+python run2.py --model Transformer
+python run2.py --model Logical
+
+
