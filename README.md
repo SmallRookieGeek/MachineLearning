@@ -13,13 +13,6 @@ This repository implements a time series forecasting pipeline for predicting dai
 - matplotlib
 - numpy
 
-> ⚠️ You can set up the environment using:
-> ```bash
-> conda create -n power_pred python=3.8
-> conda activate power_pred
-> pip install -r requirements.txt
-> ```
-
 ---
 
 ## 📊 Dataset
